@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# TAREA CONTAINERS - CERTIFICACION DEVOPS 📲💻📲💻📲💻
+## Camila Grandy Camacho
+## 56784
+### Para esta tarea se utilizo react para la aplicacion web, y para la base de datos se utilizo MySQL
+### Para instalar y levantar todo con el docker-compose, se debe ejecutar el siguiente comando:
+```
+docker-compose up  
+```
+### Para acceder a la aplicacion web, se debe ingresar a la siguiente direccion:
+```
+http://localhost:3000/
+```
+### Para acceder a la base de datos, se debe ingresar por otra terminal al contenedor de la base de datos:
+```
+docker exec -it mysqlcontainer bash
+``` 
+### Luego, se debe ingresar a la base de datos:
+```
+mysql -u root -p
+```
+### Y por ultimo, se debe ingresar la contraseña:
+```
+password = pass123
+```
+### La aplicacion web se trata de un formulario de registro de creadores de contenido, donde se debe ingresar el nombre, nombre del canal, cantidad de suscriptores y el video mas visto. Luego, se debe presionar el boton de "Enviar" para que se guarde la informacion en la base de datos.
+```
+http://localhost:3000/
+```
+## Para instalar y levantar todo con el docker-compose, se debe ejecutar el siguiente comando:
+```
+docker-compose up 
+```
+## Para la aplicacion se instalaron las siguientes dependencias:
+```
+npx create-react-app imagentareadevops
+npm install react-router-dom
+npm install axios
+npm install mysql
+npm install cors
+npm install express
+npm install material-ui
+npm install @material-ui/icons
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Para la base de datos se utilizo MySQL, y se creo una tabla llamada "creadores" con los siguientes campos:
+```
+id INT NOT NULL AUTO_INCREMENT,
+nombre VARCHAR(100) NOT NULL,
+canal VARCHAR(100) NOT NULL,
+suscriptores INT NOT NULL,
+video VARCHAR(100) NOT NULL,
+PRIMARY KEY (id)
+```
+## Para la base de datos se instalaron las siguientes dependencias:
+```
+npm install mysql
+npm install cors
+npm install express
+```
+## Para la aplicacion web se utilizo React, y se creo una pagina llamada "Formulario" con los siguientes campos:
+```
+Nombre
+Nombre del canal
+Cantidad de suscriptores
+Video mas visto
+```
+### Se decidio utilizar React porque es una libreria de JavaScript que permite crear interfaces de usuario de forma sencilla. Ademas, permite crear componentes reutilizables, lo que facilita el desarrollo de la aplicacion. Por ultimo, permite crear aplicaciones SPA (Single Page Application), lo que permite que la aplicacion sea mas rapida y eficiente.
 
-## Available Scripts
+### Se decidio utilizar MySQL porque es un sistema de gestion de bases de datos relacional, que permite almacenar y recuperar datos de forma eficiente. Ademas, es un sistema de codigo abierto, lo que permite que sea gratuito y que tenga una gran comunidad de desarrolladores que lo utilizan.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Se decidio hacer un formulario de registro de creadores de contenido, porque es una aplicacion que se puede utilizar en la vida real, y que puede ser util para muchas personas. Ademas, es una aplicacion sencilla, que permite aprender a utilizar React y MySQL de forma rapida y eficiente.
